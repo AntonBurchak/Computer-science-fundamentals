@@ -1,4 +1,3 @@
-const initialArray = [9,3,4,7,2,-2,-64,76,32,55,18,5,11,21];
 
 function insertionSort(array) {
     for (let i = 0; i < array.length; i++) {  
@@ -13,4 +12,7 @@ function insertionSort(array) {
     return array;
 }
 
-console.log(insertionSort(initialArray));
+const initialArray = [9,3,4,7,2,-2,-64,76,32,55];
+const sorted = insertionSort(initialArray);
+
+console.log(sorted);

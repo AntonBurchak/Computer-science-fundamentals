@@ -1,4 +1,3 @@
-const initialArray = [9,3,4,7,2,-2,-64,76,32,55,18,5,11,21];
 
 function bubbleSort(array) {
     for (let i = 0; i < array.length; i++) {
@@ -14,4 +13,7 @@ function bubbleSort(array) {
     return array;
 }
 
-console.log(bubbleSort(initialArray));
+const initialArray = [9,3,4,7,2,-2,-64,76,32,55];
+const sorted = bubbleSort(initialArray);
+
+console.log(sorted);

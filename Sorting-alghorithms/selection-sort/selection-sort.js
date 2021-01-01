@@ -1,4 +1,3 @@
-const initialArray = [9,3,4,7,2,-2,-64,76,32,55,18,5,11,21];
 
 function selectionSort(array) {
     for (let i = 0; i < array.length; i++) {
@@ -14,4 +13,7 @@ function selectionSort(array) {
     return array;
 }
 
-console.log(selectionSort(initialArray))
+const initialArray = [9,3,4,7,2,-2,-64,76,32,55,18,5,11,21];
+const sorted = selectionSort(initialArray);
+
+console.log(sorted);
