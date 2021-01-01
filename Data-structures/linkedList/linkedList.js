@@ -142,6 +142,34 @@ class LinkedList {
         }
     }
 
+    getNodeByValue(value) {
+        this.current = this.list;
+        
+        while (this.current.next) {
+            this.current = this.current.next;
+
+            if (this.current.value === value) {
+                return this.current.value;
+            }
+        }
+    }
+
+    removeNodeByValue(value) {
+        this.current = this.list;
+        let counter = 0;
+        
+        while (this.current) {
+            counter++;
+
+            this.current = this.current.next;
+
+            if (this.current.value === value) {
+                this.removeFromPosition(counter);
+                break;
+            }
+        }
+    }
+
     print() {
         this.current = this.list;
 
@@ -179,14 +207,14 @@ class LinkedList {
     }
 }
 
-const list = new LinkedList(1,2,3,4,5);
+// const list = new LinkedList(1,2,3,4,5);
 
 
 
-list.insertInPosition(1, 3213);
+// list.insertInPosition(1, 3213);
 
-list.getNodeByPosition(4);
-list.removeFromPosition(6);
-list.changeAtPosition(12, 1);
-list.print();
+// list.getNodeByPosition(4);
+// list.removeFromPosition(6);
+// list.changeAtPosition(12, 1);
+// list.print();
 
